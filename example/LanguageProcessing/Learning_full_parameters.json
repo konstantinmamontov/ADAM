@@ -1,0 +1,72 @@
+{
+  "Test"   : "learning_sequential" ,
+  "Date"   : "2023-03-11" ,
+  "Version": "0.5.3"    ,
+
+  "ADAM_parameters"           :   {
+
+      "clustering"            :   [ "kmeans"  ]   ,
+      "clustering_space"      :   [100, 4096, 4096, 4096, 4096]   ,
+      "clusters"              :   [[300], [2048], [128], [64], [32]],
+      "coder"                 :   [   2       ]   ,
+      "decode_fast"           :   [   true    ]   ,
+      "decode_num"            :   [   10      ]   ,
+      "decode_slow"           :   [   false   ]
+ ,
+      "discount"              :   [ [ 0.9 ]   ]   ,
+      "episodic_threshold"    :   [ 100000000 ]   ,
+      "fitness"               :   [   4       ]   ,
+      "global_value_update"   :   [   false   ]   ,
+      "heads"                 :   [1, 4, 4, 4, 4] ,
+      "initial_value"         :       1.0         ,
+      "internal_rewards"      :   [   0.0     ]   ,
+      "layers"                :       5           ,
+      "learning_rate"         :   [ [ 0.9 ]   ]   ,
+      "morphemes_in_heads"    :   [  2000000, 100000]   ,
+      "morphemes_in_layers"   :   [  2000000, 2000000, 10000000, 50000000],
+      "morpheme_max_lengths"  :   [   40, 5   ]   ,
+      "parser_order"          :   [   5, 2    ]   ,
+      "planner_order"         :   [   5, 2    ]   ,
+      "planning_fast"         :   [   true    ]   ,
+      "planning_slow"         :   [   false   ]   ,
+      "plans_max"             :   [ [ 10 ]    ]   ,
+      "plans_min"             :   [   1       ]   ,
+      "quorum"                :   [   0.51    ]   ,
+      "ppmi_threshold"        :   [ [ 0.0  ]  ]   ,
+      "sampling_dispersion"   :   [   0.33    ]   ,
+      "semantic_threshold"    :   [[10.0], [10000.0], [100000.0], [400000.0], [1600000.0]]  ,
+      "step_reward"           :   [   0.0     ]   ,
+      "sync_output"           :   [   true    ]   ,
+      "thompson_sampling"     :   [   ""      ]   ,
+      "threading"             :   [   true    ]   ,
+      "update_rewards"        :   [   false   ]   ,
+      "update_values"         :   [   false   ]   ,
+      "validate_plans"        :   [   true    ]   ,
+      "values"                :   [ [ 2   ]   ]   ,
+      "value_threshold"       :   [   0.1     ]   ,
+      "winner_pair_count"     :   [   1.0     ]   ,
+      "working_memory"        :   [   3, 0, 0, 0, 0] ,
+
+      "options"               :   {
+          "sparse_vector_min_length" : 1          ,
+          "min_frequency"     :        [500, 10, 2]  ,
+          "min_counts"        :        [0, 15, 15]  ,
+          "max_dict"          :        [50000, 300000, 2700000, 15000000]      ,
+          "min_length"        :        [1, 1, 1, 1, 1]   
+        }
+  },
+
+  "application_parameters"    :   {
+
+      "application"           :      "NLP"        ,
+      "popular_threshold"     :       2.0
+  },
+
+  "test_parameters"           :   {
+
+      "text_file"             : "books3_16G_en.txt" ,
+      "unknown_threshold"     :           200       ,
+      "text_repetition"       :           1         ,
+      "base_words"            :          ["February ", "Alex ", "Paris ", "come ", "have ", "Tuesday ", "Where "]
+  }
+}
