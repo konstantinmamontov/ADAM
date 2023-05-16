@@ -1,4 +1,4 @@
-This repository is designed to reproduce and verify the results published in the article "Neuro-symbolic conversational intelligence for a fraction of the cost" by the following authors: Sergey Shumsky, Oleg Baskov, Timur Fakhrutdinov, Dmitry Konstantinov, Konstantin Mamontov
+This repository is designed to reproduce and verify the results published in the article "Neuro-symbolic conversational intelligence for a fraction of the cost".
 
 The reproduction of the results consists of two consecutive stages:
 
