@@ -40,7 +40,7 @@ __pycache__
 ## Big data files are added to the `/data_` directory and never saved to the VCS
 data_
 */test/*.jld
-*/src_test/*
+/src_test
 
 # TDD files
 apxub
